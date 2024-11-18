@@ -20,9 +20,9 @@ services:
       - 8.8.8.8
       - 8.8.4.4
     volumes:
-      - ./flag:/flag:ro
-      - ./bot_config:/bot_config:ro
-      - ./bot-src:/app:ro
+      - ./flag:/flag:rw
+      - ./bot_config:/bot_config:rw
+      - ./bot-src:/app:rw
       - ./bot-log:/bot-log:rw
       - bot-secret:/preshared_bot_secret:rw
     networks:
